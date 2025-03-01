@@ -176,6 +176,7 @@ body {
     height: 70%;
 }
 
+
 .checkbox__container {
     display: flex;
     flex-direction: row;
@@ -193,6 +194,7 @@ body {
     align-items: center;
 }
 
+
 .checkbox__container__texto {
     display: flex;
     align-items: center;
@@ -201,6 +203,11 @@ body {
     color: var(--cor-azul-fraco);
 }
 
+.checkbox__container__img__info:hover {
+    transition: all 0.8s ease-in-out;
+    transform: translateY(-0.25rem);
+
+}
 
 .checkbox__container__botao {
     display: flex;
