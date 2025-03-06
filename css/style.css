@@ -79,7 +79,7 @@ body {
 }
 
 .conteudo__principal__img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     flex-direction: column;
     margin-top: 2%;
@@ -108,13 +108,13 @@ body {
     background-color: var(--cor-azul-forte);
     color: var(--cor-branca);
     text-align: center;
-    padding: 10px 0;
     font-size: 15px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    margin-top: 4%;
 }
 
 .rodape__conteudo {
@@ -153,7 +153,7 @@ body {
     margin-left: auto;
     width: auto;
     text-align: center;
-    margin-right: 28%;
+    margin-right: 35%;
     margin-top: 13px;
 }
 
@@ -174,7 +174,7 @@ body {
 
 .conteudo__principal__tela2__video {
     width: 100%;
-    height: 70%;
+    height: 60%;
 }
 
 
@@ -186,13 +186,18 @@ body {
     gap: 10px;
     padding: 10px;
     height: 260px;
-    margin-bottom: 2%;
+    margin-bottom: 9%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+
+
 }
 
 .checkbox__container__img {
-    width: 200px;
+    width: 400px;
     height: auto;
     align-items: center;
+    padding-right: 20%;
 }
 
 
@@ -202,6 +207,21 @@ body {
     gap: 10px;
     font-family: "FordAntenna", Arial, Helvetica, sans-serif;
     color: var(--cor-azul-fraco);
+    margin-left: 80px;
+}
+
+.checkbox__container__table {
+    border-collapse: collapse;
+    padding: 33px;
+    font-family: "FordAntenna", Arial, Helvetica, sans-serif;
+    background-color: #00407C;
+}
+
+
+.checkbox__container__table__tr {
+    border: 1px solid var(--cor-azul-forte);
+    font-family: "FordAntenna", Arial, Helvetica, sans-serif;
+    padding: 5px;
 }
 
 .checkbox__container__img__info:hover {
@@ -214,14 +234,12 @@ body {
     display: flex;
     width: 300px;
     height: auto;
-    margin-left: 38%;
+    margin-left: 40%;
     margin-bottom: 50px;
-    margin-top: -65px;
+    margin-top: -115px;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
-    background-color: var(--cor-azul-fraco);
-
+    border: solid 2px red;
 
 }
 
@@ -233,6 +251,11 @@ body {
     background-color: var(--cor-azul-fraco);
     font-family: "FordAntenna", Arial, Helvetica, sans-serif;
     transition: all .3s ease;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    border: solid 2px red;
 }
 
 .botao:hover {
