@@ -9,6 +9,7 @@
     --cor-azul-forte: #102B4E;
     --cor-azul-fraco: #00407C;
     --cor-branca: #FFFFFF;
+    --cor-preta: #000000;
 }
 
 * {
@@ -198,6 +199,11 @@ body {
     height: auto;
     align-items: center;
     padding-right: 20%;
+    transition: all .3s ease;
+}
+
+.checkbox__container__img:hover {
+    transform: scale(1.10);
 }
 
 
@@ -207,27 +213,67 @@ body {
     gap: 10px;
     font-family: "FordAntenna", Arial, Helvetica, sans-serif;
     color: var(--cor-azul-fraco);
-    margin-left: 80px;
+    margin-left: 20px;
+    position: relative;
 }
 
 .checkbox__container__table {
+    width: 100%;
     border-collapse: collapse;
-    padding: 33px;
-    font-family: "FordAntenna", Arial, Helvetica, sans-serif;
-    background-color: #00407C;
+}
+
+.checkbox__container__table__tr th {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.checkbox__container__table__tr td {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px var(--cor-preta);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.checkbox__container__texto__info:hover+.info {
+    display: block;
 }
 
 
-.checkbox__container__table__tr {
-    border: 1px solid var(--cor-azul-forte);
-    font-family: "FordAntenna", Arial, Helvetica, sans-serif;
-    padding: 5px;
+.checkbox__container__texto__info {
+    background-color: var(--cor-branca);
+    border: none;
 }
 
 .checkbox__container__img__info:hover {
     transition: all 0.8s ease-in-out;
     transform: translateY(-0.25rem);
 
+}
+
+
+.checkbox__container__link {
+    text-decoration: none;
+    font-family: "FordAntenna", Arial, Helvetica, sans-serif;
+    color: var(--cor-azul-fraco);
+
+
+}
+
+.checkbox__container__link:hover {
+    color: var(--cor-azul-forte);
 }
 
 .checkbox__container__botao {
@@ -239,7 +285,7 @@ body {
     margin-top: -115px;
     align-items: center;
     justify-content: center;
-    border: solid 2px red;
+
 
 }
 
@@ -255,11 +301,16 @@ body {
     height: auto;
     width: 100%;
     text-align: center;
-    border: solid 2px red;
 }
 
 .botao:hover {
     font-size: 20px;
+}
+
+.checkbox__container__valor {
+    font-family: "FordAntenna", Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    color: var(--cor-preta);
 }
 
 /* Tela Contato */
