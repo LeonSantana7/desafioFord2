@@ -278,11 +278,11 @@ body {
 
 .checkbox__container__botao {
     display: flex;
-    width: 300px;
+    width: 400px;
     height: auto;
-    margin-left: 40%;
+    margin-left: 35%;
     margin-bottom: 50px;
-    margin-top: -115px;
+    margin-top: -50px;
     align-items: center;
     justify-content: center;
 
@@ -290,6 +290,7 @@ body {
 }
 
 .botao {
+    display: flex;
     font-size: 24px;
     font-weight: 600;
     color: var(--cor-branca);
@@ -301,6 +302,7 @@ body {
     height: auto;
     width: 100%;
     text-align: center;
+    justify-content: center;
 }
 
 .botao:hover {
@@ -309,7 +311,7 @@ body {
 
 .checkbox__container__valor {
     font-family: "FordAntenna", Arial, Helvetica, sans-serif;
-    padding-left: 100px;
+    padding-left: 40px;
     color: var(--cor-preta);
 }
 
@@ -374,4 +376,51 @@ body {
 .conteudo__principal__tela3__forms__submit1:hover {
     font-size: 20px;
     background-color: var(--cor-azul-fraco);
+}
+
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+    /* Estilos para smartphones- Primeira tela*/
+    html,
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        border: solid 2px red;
+        width: 403px;
+        height: auto;
+        display: flex;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tablets */
+}
+
+/* Tablets em paisagem e laptops pequenos */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets em paisagem e laptops pequenos */
+}
+
+/* Laptops e desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos para laptops e desktops */
+}
+
+/* Monitores grandes */
+@media (min-width: 1441px) {
+    /* Estilos para monitores grandes */
 }
