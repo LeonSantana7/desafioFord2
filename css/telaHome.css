@@ -166,116 +166,226 @@ body {
 }
 
 /* Dispositivos Móveis (até 320px) */
-@media (min-width: 320px) and (max-width: 568px) {
+@media (min-width: 320px) and (max-width: 481px) {
     body {
-        min-height: 100vh;
         display: flex;
+        border: solid 2px red;
         flex-direction: column;
+        min-height: 70%;
+        margin: 0;
+    }
+
+    main {
+        border: solid 2px red;
+        margin-top: 10%;
+        margin-bottom: -100%;
+
+    }
+
+    .rodape {
+        margin-top: 100vh;
+        text-align: center;
+        height: 150px;
+        margin-bottom: -50%;
+        display: flex;
+    }
+
+    .rodape__conteudo__texto {
+        font-size: 10px;
+        margin-right: 1%;
+    }
+
+    .rodape__conteudo__sociais {
+        width: 35px;
+        margin-left: 1px;
+
+    }
+
+    .rodape__conteudo__sociais__img {
+        width: 20px;
+    }
+
+    .rodape__logo img {
+        width: 70px;
+    }
+
+    .rodape__copy {
+        font-size: 11px;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        width: 150px;
+        margin-right: -0.5%;
+
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Estilos para tablets */
+    body {
+        width: 100%;
+
+    }
+
+    main {
+        margin-top: 80%;
+        width: auto;
+        margin-bottom: -90%;
     }
 
     .cabecalho {
-        display: flex;
-        align-items: center;
-    }
-
-    .cabecalho__img {
-        width: 20%;
-    }
-
-    .cabecalho__menu {
-        width: auto;
-        padding-bottom: 5%;
-        height: auto;
-        padding-left: 10%;
-        gap: 10px;
-    }
-
-    .cabecalho__menu__link {
-        font-size: 14px;
-    }
-
-    .cabecalho__menu__link:hover {
-        font-size: 14px;
-    }
-
-    .conteudo {
-        width: 100%;
-        margin-top: 5%;
-        margin-bottom: -30%;
+        margin-bottom: -90%;
     }
 
     .conteudo__principal__img {
-        width: 100%;
+        width: 90%;
+        margin-top: 45%;
+        border: solid 2px red;
+        margin-bottom: -30%;
+
 
     }
 
     .conteudo__principal__texto {
-        font-size: 14px;
-        margin-top: 3%;
-    }
+        margin-top: 31%;
+        border: solid 2px red;
+        font-size: 13px;
 
-    .conteudo__principal__texto:hover a {
-        font-size: 14px;
     }
 
     .rodape {
-        display: flex;
-        padding: 0 20px;
-        margin-top: 50%;
-        flex-direction: column;
-        height: 100%;
+
+        margin-top: 180%;
+        border: solid 2px red;
         width: 100%;
+        height: 100px;
+
 
     }
 
     .rodape__conteudo__texto {
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        text-align: left;
-
-
+        font-size: 13px;
     }
 
     .rodape__copy {
-        margin-left: 40%;
-        width: 100%;
-        margin-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px red;
+        margin-right: 10%;
+        font-size: 13px;
     }
 
     .rodape__logo {
-        width: 30%;
-        padding-top: 1%;
+        margin-right: 5%;
     }
-
-    .rodape__conteudo__sociais__img {
-        width: 30px;
-    }
-
-    .rodape__conteudo__sociais__img:hover {
-        width: 30px;
-    }
-}
-
-/* Smartphones */
-
-
-/* Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-    /* Estilos para tablets */
 }
 
 /* Tablets em paisagem e laptops pequenos */
 @media (min-width: 769px) and (max-width: 1024px) {
+
     /* Estilos para tablets em paisagem e laptops pequenos */
+    body {
+        width: 100%;
+    }
+
+    .cabecalho {
+        margin-bottom: -10%;
+    }
+
+    .conteudo__principal__img {
+        width: 100%;
+        margin-top: 25%;
+        border: solid 2px red;
+        margin-bottom: 2%;
+
+    }
+
+    .conteudo__principal__texto {
+        border: solid 2px red;
+    }
+
+    .rodape {
+        margin-top: 30%;
+        border: solid 2px red;
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .rodape__conteudo__texto {
+        font-size: 13px;
+    }
+
+    .rodape__copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        border: solid 2px red;
+        margin-right: 10%;
+    }
+
+    .rodape__logo {
+        margin-right: 5%;
+    }
 }
 
 /* Laptops e desktops */
 @media (min-width: 1025px) and (max-width: 1440px) {
+
     /* Estilos para laptops e desktops */
+    .conteudo__principal__img {
+        width: 90%;
+        margin-top: 15%;
+    }
+
+    .rodape {
+        margin-top: 15%;
+    }
+
+    .rodape__conteudo__texto {
+        font-size: 14px;
+    }
+
+    .rodape__copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        border: solid 2px red;
+        margin-right: 10%;
+    }
+
+    .rodape__logo {
+        margin-right: 5%;
+    }
 }
 
 /* Monitores grandes */
 @media (min-width: 1441px) {
+
     /* Estilos para monitores grandes */
+    .conteudo__principal__img {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .rodape {
+        margin-top: 10%;
+    }
+
+    .rodape__copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        border: solid 2px red;
+        margin-right: 20%;
+    }
+
+    .rodape__logo {
+        margin-right: 2%;
+    }
 }

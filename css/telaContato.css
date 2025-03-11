@@ -73,18 +73,30 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease;
 }
 
 .conteudo__principal__tela3__img {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 40px;
+
+}
+
+.conteudo__principal__tela3__img:hover {
+    transform: scale(1.20);
 }
 
 .conteudo__principal__tela3__texto {
     font-family: "FordAntenna", Arial, Helvetica, sans-serif;
     font-size: 24px;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(16, 43, 78, 1) 38%, rgba(0, 64, 124, 1) 100%);
+    width: 53%;
+}
 
+.conteudo__principal__tela3__texto p {
+    color: var(--cor-branca);
 }
 
 .conteudo__principal__tela3__forms {
@@ -115,7 +127,6 @@ textarea {
 }
 
 .conteudo__principal__tela3__forms__submit {
-    border: solid 2px red;
     display: flex;
     align-items: center;
 }
@@ -130,9 +141,10 @@ textarea {
     transition: all .3s ease;
     width: 30vh;
     border-radius: 10px;
-    margin-top: 20%;
-    margin-left: 73%;
+    margin-top: 19%;
+    margin-left: 69%;
     height: 5vh;
+    margin-bottom: 10px;
 }
 
 .conteudo__principal__tela3__forms__submit1:hover {
