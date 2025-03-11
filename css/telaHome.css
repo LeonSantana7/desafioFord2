@@ -166,9 +166,11 @@ body {
 }
 
 /* Dispositivos Móveis (até 320px) */
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 568px) {
     body {
-        width: 550px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     .cabecalho {
@@ -176,17 +178,82 @@ body {
         align-items: center;
     }
 
+    .cabecalho__img {
+        width: 20%;
+    }
+
     .cabecalho__menu {
         width: auto;
-        padding-bottom: 30px;
+        padding-bottom: 5%;
         height: auto;
-
+        padding-left: 10%;
+        gap: 10px;
     }
 
     .cabecalho__menu__link {
         font-size: 14px;
+    }
+
+    .cabecalho__menu__link:hover {
+        font-size: 14px;
+    }
+
+    .conteudo {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: -30%;
+    }
+
+    .conteudo__principal__img {
+        width: 100%;
+
+    }
+
+    .conteudo__principal__texto {
+        font-size: 14px;
+        margin-top: 3%;
+    }
+
+    .conteudo__principal__texto:hover a {
+        font-size: 14px;
+    }
+
+    .rodape {
+        display: flex;
+        padding: 0 20px;
+        margin-top: 50%;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .rodape__conteudo__texto {
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
 
 
+    }
+
+    .rodape__copy {
+        margin-left: 40%;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .rodape__logo {
+        width: 30%;
+        padding-top: 1%;
+    }
+
+    .rodape__conteudo__sociais__img {
+        width: 30px;
+    }
+
+    .rodape__conteudo__sociais__img:hover {
+        width: 30px;
     }
 }
 

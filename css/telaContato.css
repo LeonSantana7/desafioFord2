@@ -96,11 +96,22 @@ body {
 
 .conteudo__principal__tela3__forms__solo {
     height: 24px;
-
+    width: 100vh;
+    margin: 0.5%;
 }
 
 .conteudo__principal__tela3__forms__option {
-    width: 175px;
+    width: 100%;
+    height: 100%;
+    margin-left: 0.5%;
+}
+
+textarea {
+    margin-top: 1%;
+    resize: none;
+    width: 100%;
+    height: 15vh;
+    margin-left: 0.5%;
 }
 
 .conteudo__principal__tela3__forms__submit {
@@ -117,10 +128,11 @@ body {
     background-color: var(--cor-azul-forte);
     font-family: "FordAntenna", Arial, Helvetica, sans-serif;
     transition: all .3s ease;
-    width: 120px;
+    width: 30vh;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 33%;
+    margin-top: 20%;
+    margin-left: 73%;
+    height: 5vh;
 }
 
 .conteudo__principal__tela3__forms__submit1:hover {
