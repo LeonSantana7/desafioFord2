@@ -278,6 +278,13 @@ body {
 
 @media screen and (max-width: 1020px) {
 
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
 
     .checkbox__container__table {
         display: block;
