@@ -120,6 +120,7 @@ body {
 .checkbox__container__table {
     width: 100%;
     border-collapse: collapse;
+    display: block;
 }
 
 .checkbox__container__table__tr th {
@@ -351,7 +352,7 @@ body {
     }
 
     .cabecalho__menu__link {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .conteudo__principal__tela2 {
@@ -380,8 +381,8 @@ body {
     }
 
     .checkbox__container__texto {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        align-items: baseline;
     }
 
     .info {
@@ -389,7 +390,7 @@ body {
         top: 0;
         left: 0;
         transform: none;
-        width: 100%;
+        width: 70%;
     }
 
     .checkbox__container__botao {
@@ -398,15 +399,17 @@ body {
     }
 
     .checkbox__container__texto__info {
-        margin-left: 70%;
-        width: 50vh;
+        width: 10%;
     }
+
 
 
     .checkbox__container__table__tr th,
     .checkbox__container__table__tr td {
         font-size: 8px;
         padding: 5px;
+        display: block;
+
     }
 
     .checkbox__container__valor {
