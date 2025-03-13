@@ -180,13 +180,17 @@ body {
 
     .cabecalho__menu {
         gap: 10px;
-        margin-top: 10%;
-        margin-right: 50%;
+        margin-top: 3%;
+        margin-right: 40%;
     }
 
     .cabecalho__img {
         width: 50%;
         margin-left: 35%;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 18px;
     }
 
     html,
