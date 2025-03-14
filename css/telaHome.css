@@ -181,13 +181,36 @@ body {
         flex-direction: column;
     }
 
+    .conteudo {
+        margin: 10%;
+    }
+
     .rodape {
-        height: 41px;
+        height: 45px;
         width: 100%;
         color: white;
         text-align: center;
-       
+        margin-top: -4%;
 
+
+
+    }
+
+    .rodape__logo {
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 700) {
+    .cabecalho__menu {
+        gap: 10px;
+        margin-top: 3%;
+        margin-left: 40%;
+    }
+
+    .cabecalho__img {
+        width: 40%;
+        margin-left: 25%;
     }
 }
 
@@ -201,16 +224,16 @@ body {
     .cabecalho__menu {
         gap: 10px;
         margin-top: 3%;
-        margin-left: 30%;
+        margin-left: 40%;
     }
 
     .cabecalho__img {
-        width: 50%;
+        width: 20%;
         margin-left: 35%;
     }
 
     .cabecalho__menu__link {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     html,
@@ -251,10 +274,11 @@ body {
     }
 
     .rodape {
-        height: 41px;
+        height: 50px;
         width: 100%;
         color: white;
         text-align: center;
+        margin-top: -10%;
 
     }
 
