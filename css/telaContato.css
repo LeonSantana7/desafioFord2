@@ -93,6 +93,7 @@ body {
     background: rgb(2, 0, 36);
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(16, 43, 78, 1) 38%, rgba(0, 64, 124, 1) 100%);
     width: 73%;
+    height: 500px;
 }
 
 .conteudo__principal__tela3__texto p {
@@ -162,7 +163,7 @@ textarea {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 4%;
+    margin-top: 20%;
 }
 
 .rodape__conteudo {
@@ -211,6 +212,20 @@ textarea {
     width: auto;
 }
 
+@media (min-width: 1020px) and (max-width:1928px) {
+    .conteudo__principal__tela3__forms__solo {
+        width: 60%;
+    }
+
+    .conteudo__principal__tela3__forms__submit1 {
+        margin-left: 30%;
+    }
+
+    .rodape {
+        margin-top: 28%;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     .cabecalho {
         flex-direction: column;
@@ -219,7 +234,7 @@ textarea {
     }
 
     .cabecalho__img {
-        width: 80%;
+        width: 30%;
         margin-left: 0;
     }
 
@@ -248,14 +263,21 @@ textarea {
     }
 
     .conteudo__principal__tela3__forms__solo {
-        width: 90%;
+        width: 100%;
     }
+
+    .conteudo__principal__tela3__forms__submit1 {
+        margin-left: 30%;
+    }
+
 
     .rodape {
         height: 41px;
         width: 100%;
         color: white;
         text-align: center;
+        margin-top: 40%;
+
     }
 
     .rodape__conteudo {
@@ -290,6 +312,15 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
     .cabecalho__img {
         width: 80px;
     }
@@ -297,6 +328,7 @@ textarea {
     .cabecalho__menu__link {
         font-size: 16px;
     }
+
 
     .conteudo__principal__tela3__img {
         margin-top: 50%;
@@ -315,6 +347,7 @@ textarea {
 
     .conteudo__principal__tela3__forms__solo {
         width: 252px;
+        height: 100%;
     }
 
     .conteudo__principal__tela3__forms__option {
@@ -334,7 +367,7 @@ textarea {
         width: 100%;
         color: white;
         text-align: center;
-        margin-top: 50%;
+        margin-top: 100%;
     }
 
     .rodape__conteudo {
