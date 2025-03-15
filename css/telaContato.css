@@ -213,6 +213,10 @@ textarea {
 }
 
 @media (min-width: 1020px) and (max-width:1928px) {
+    .conteudo__principal__tela3 {
+        margin-top: 10%;
+    }
+
     .conteudo__principal__tela3__forms__solo {
         width: 60%;
     }
@@ -272,11 +276,11 @@ textarea {
 
 
     .rodape {
-        height: 41px;
+        height: 45px;
         width: 100%;
         color: white;
         text-align: center;
-        margin-top: 40%;
+        margin-top: 70%;
 
     }
 
@@ -311,7 +315,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width:320px) and (max-width: 600px) {
 
     html,
     body {
@@ -356,14 +360,14 @@ textarea {
 
     .conteudo__principal__tela3__forms__submit1 {
         font-size: 16px;
-        width: 100%;
-        max-width: 200px;
-        margin-top: 135px;
-        margin-right: 120px;
+        width: 50%;
+        margin-left: 20%;
+        margin-top: 105px;
+        border: solid 2px red;
     }
 
     .rodape {
-        height: 41px;
+        height: 45px;
         width: 100%;
         color: white;
         text-align: center;

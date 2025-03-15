@@ -460,3 +460,33 @@ body {
     }
 
 }
+
+@media (min-width: 1020px) and (max-width:1928px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo {
+        margin: 10%;
+    }
+
+    .rodape {
+        height: 47px;
+        width: 100%;
+        color: white;
+        text-align: center;
+
+
+
+
+    }
+
+    .rodape__logo {
+        margin-right: 2%;
+    }
+}
